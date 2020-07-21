@@ -1,0 +1,31 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<ngx-spinner opacity="0.2"   bdColor = "rgba(51, 51, 51, 0.8)" size = "large" color = "#fff" type = "ball-square-clockwise-spin"></ngx-spinner>
+
+<router-outlet style=" background-color: white" *ngIf="isLoggedIn === true" ></router-outlet>
+
+<app-login style=" background-color: white" *ngIf="isLoggedIn === false"></app-login>
+<notifier-container style="height : 200px"></notifier-container>
+
+
+
+<!--
+<nav        style="background-color: #0d3446 ;color:white"
+mat-tab-nav-bar>
+    <a mat-tab-link
+       *ngFor="let link of navLinks"
+       [routerLink]="link.path"
+       style="color:floralwhite"
+       routerLinkActive="active-link" #rla="routerLinkActive"
+       [routerLinkActiveOptions]="{exact:true}"
+       [active]="rla.isActive">
+      {{link.label}}
+    </a>
+  </nav>
+
+  <router-outlet></router-outlet> -->
+
+
+
+
